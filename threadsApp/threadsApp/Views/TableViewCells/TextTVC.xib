@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TextTVC" rowHeight="299" id="KGk-i7-Jjw" customClass="TextTVC" customModule="threadsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="299"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="298.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYs-M2-es7">
+                        <rect key="frame" x="8" y="8" width="318" height="282.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wve-fO-ICy">
+                        <rect key="frame" x="16" y="16" width="302" height="266.5"/>
+                        <string key="text">California’s Department of Motor Vehicles (DMV) is making it easier for carmakers to test their driverless cars on state roads. On February 26, the DMV’s Office of Administrative Law (OAL) approved new regulations allowing companies to test fully driverless vehicles without a human behind the wheel.</string>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                        <color key="textColor" red="0.37254901959999998" green="0.36078431370000003" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wve-fO-ICy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="GYX-Qa-gXB"/>
+                    <constraint firstItem="wve-fO-ICy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="JDq-gX-Jek"/>
+                    <constraint firstAttribute="trailing" secondItem="PYs-M2-es7" secondAttribute="trailing" constant="8" id="MPA-9t-86h"/>
+                    <constraint firstAttribute="trailing" secondItem="wve-fO-ICy" secondAttribute="trailing" constant="16" id="YMw-Go-eNp"/>
+                    <constraint firstItem="PYs-M2-es7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="afu-rm-OIN"/>
+                    <constraint firstAttribute="bottom" secondItem="wve-fO-ICy" secondAttribute="bottom" constant="16" id="aoy-52-I98"/>
+                    <constraint firstAttribute="bottom" secondItem="PYs-M2-es7" secondAttribute="bottom" constant="8" id="psO-fk-A8P"/>
+                    <constraint firstItem="PYs-M2-es7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="vnh-3c-ZM9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backView" destination="PYs-M2-es7" id="Nzg-PS-qjl"/>
+                <outlet property="cellText" destination="wve-fO-ICy" id="xw5-w4-eaC"/>
+            </connections>
+            <point key="canvasLocation" x="50" y="210.5"/>
+        </tableViewCell>
+    </objects>
+</document>

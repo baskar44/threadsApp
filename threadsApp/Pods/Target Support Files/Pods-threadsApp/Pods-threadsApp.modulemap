@@ -1,0 +1,6 @@
+framework module Pods_threadsApp {
+  umbrella header "Pods-threadsApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

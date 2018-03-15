@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ThreadTVC" rowHeight="164" id="KGk-i7-Jjw" customClass="ThreadTVC" customModule="threadsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="864" height="164"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="864" height="163.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kyv-7h-DcF" customClass="ThreadView" customModule="threadsApp" customModuleProvider="target">
+                        <rect key="frame" x="16" y="16" width="832" height="131.5"/>
+                        <color key="backgroundColor" red="0.73243409400000004" green="0.87669545410000005" blue="0.99761968850000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Kyv-7h-DcF" secondAttribute="bottom" constant="16" id="Mab-n5-uEb"/>
+                    <constraint firstItem="Kyv-7h-DcF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="MoJ-MP-qri"/>
+                    <constraint firstAttribute="trailing" secondItem="Kyv-7h-DcF" secondAttribute="trailing" constant="16" id="N9D-3a-r19"/>
+                    <constraint firstItem="Kyv-7h-DcF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="dfB-aL-M3y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="threadView" destination="Kyv-7h-DcF" id="GX9-Zi-tnL"/>
+            </connections>
+            <point key="canvasLocation" x="283" y="74"/>
+        </tableViewCell>
+    </objects>
+</document>

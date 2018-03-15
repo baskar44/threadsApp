@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Black</string>
+            <string>Avenir-Heavy</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="JournalCVC" id="gTV-IL-0wX" customClass="JournalCVC" customModule="threadsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="107"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="107"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsm-Mt-4U9">
+                        <rect key="frame" x="16" y="16" width="306" height="75"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nov 18, 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igp-C6-69I">
+                                <rect key="frame" x="8" y="8" width="290" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="QfA-dd-eHd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                <color key="textColor" red="0.3727766871" green="0.36053746939999998" blue="0.3728396893" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You shared Leo Davinci's Mona Lisa" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZi-5d-PCH">
+                                <rect key="frame" x="8" y="44" width="236" height="15"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vietnam" translatesAutoresizingMaskIntoConstraints="NO" id="XMP-mo-Ykt">
+                                <rect key="frame" x="260" y="36.5" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.20152044299999999" green="0.45299702879999998" blue="0.72286218400000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="7mb-Pd-a0k"/>
+                                    <constraint firstAttribute="height" constant="30" id="XdM-2B-Ezt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94406384229999996" green="0.97621053459999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zZi-5d-PCH" firstAttribute="top" secondItem="Igp-C6-69I" secondAttribute="bottom" constant="16" id="8rC-M7-084"/>
+                            <constraint firstItem="zZi-5d-PCH" firstAttribute="leading" secondItem="bsm-Mt-4U9" secondAttribute="leading" constant="8" id="BGo-pS-Y8O"/>
+                            <constraint firstAttribute="trailing" secondItem="XMP-mo-Ykt" secondAttribute="trailing" constant="16" id="FgC-c8-YSS"/>
+                            <constraint firstItem="XMP-mo-Ykt" firstAttribute="centerY" secondItem="zZi-5d-PCH" secondAttribute="centerY" id="Hed-rO-kb1"/>
+                            <constraint firstAttribute="trailing" secondItem="Igp-C6-69I" secondAttribute="trailing" constant="8" id="L9T-vh-ffR"/>
+                            <constraint firstItem="XMP-mo-Ykt" firstAttribute="leading" secondItem="zZi-5d-PCH" secondAttribute="trailing" constant="16" id="MuB-Is-MiM"/>
+                            <constraint firstItem="Igp-C6-69I" firstAttribute="top" secondItem="bsm-Mt-4U9" secondAttribute="top" constant="8" id="Y8h-pD-Grp"/>
+                            <constraint firstAttribute="bottom" secondItem="zZi-5d-PCH" secondAttribute="bottom" constant="16" id="iIM-YW-Py5"/>
+                            <constraint firstItem="Igp-C6-69I" firstAttribute="leading" secondItem="bsm-Mt-4U9" secondAttribute="leading" constant="8" id="zYK-Mu-0Ak"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="bsm-Mt-4U9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="Wie-5y-osm"/>
+                <constraint firstAttribute="trailing" secondItem="bsm-Mt-4U9" secondAttribute="trailing" constant="16" id="cmr-IF-MfG"/>
+                <constraint firstAttribute="bottom" secondItem="bsm-Mt-4U9" secondAttribute="bottom" constant="16" id="nTt-5I-9yo"/>
+                <constraint firstItem="bsm-Mt-4U9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="wdC-Wv-2iE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="338" height="107"/>
+            <point key="canvasLocation" x="164" y="72.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="vietnam" width="6016" height="4016"/>
+    </resources>
+</document>

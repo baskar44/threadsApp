@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Black</string>
+            <string>Avenir-Heavy</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThreadView" customModule="threadsApp" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="CV0-M4-vk6" id="6q1-oo-TOo"/>
+                <outlet property="createdDateLabel" destination="c2a-43-ecf" id="nhB-zO-pkI"/>
+                <outlet property="creatorLabel" destination="mlu-r3-HGp" id="aPX-oy-Ecm"/>
+                <outlet property="threadTitleLabel" destination="JK0-QG-x51" id="php-cz-c3m"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="CV0-M4-vk6">
+            <rect key="frame" x="0.0" y="0.0" width="456" height="154"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2a-43-ecf">
+                    <rect key="frame" x="16" y="8" width="424" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="B5j-PK-gxw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                    <color key="textColor" red="0.3727766871" green="0.36053746939999998" blue="0.3728396893" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK0-QG-x51">
+                    <rect key="frame" x="16" y="44" width="424" height="58"/>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlu-r3-HGp">
+                    <rect key="frame" x="16" y="118" width="424" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Kae-j5-yB5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.73243409400000004" green="0.87669545410000005" blue="0.99761968850000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mlu-r3-HGp" firstAttribute="leading" secondItem="6Bw-5P-3ET" secondAttribute="leading" constant="16" id="1fb-V4-ueE"/>
+                <constraint firstItem="JK0-QG-x51" firstAttribute="top" secondItem="c2a-43-ecf" secondAttribute="bottom" constant="16" id="28o-v0-mBG"/>
+                <constraint firstItem="c2a-43-ecf" firstAttribute="leading" secondItem="CV0-M4-vk6" secondAttribute="leading" constant="16" id="2u7-Rw-wwE"/>
+                <constraint firstItem="6Bw-5P-3ET" firstAttribute="trailing" secondItem="JK0-QG-x51" secondAttribute="trailing" constant="16" id="AHs-05-i9p"/>
+                <constraint firstItem="6Bw-5P-3ET" firstAttribute="trailing" secondItem="mlu-r3-HGp" secondAttribute="trailing" constant="16" id="Kkr-yi-COg"/>
+                <constraint firstItem="6Bw-5P-3ET" firstAttribute="bottom" secondItem="mlu-r3-HGp" secondAttribute="bottom" constant="16" id="OJa-MQ-3cv"/>
+                <constraint firstItem="JK0-QG-x51" firstAttribute="leading" secondItem="6Bw-5P-3ET" secondAttribute="leading" constant="16" id="PU9-8j-pzY"/>
+                <constraint firstItem="c2a-43-ecf" firstAttribute="top" secondItem="CV0-M4-vk6" secondAttribute="top" constant="8" id="d0I-eX-biT"/>
+                <constraint firstAttribute="trailing" secondItem="c2a-43-ecf" secondAttribute="trailing" constant="16" id="sVq-Cm-a3u"/>
+                <constraint firstItem="mlu-r3-HGp" firstAttribute="top" secondItem="JK0-QG-x51" secondAttribute="bottom" constant="16" id="vM7-ZJ-jFe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="6Bw-5P-3ET"/>
+            <point key="canvasLocation" x="171" y="-202"/>
+        </view>
+    </objects>
+</document>

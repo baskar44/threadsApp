@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BioTableVC" rowHeight="158" id="KGk-i7-Jjw" customClass="BioTableVC" customModule="threadsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="158"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="157.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iW7-ad-Au8">
+                        <rect key="frame" x="8" y="8" width="40" height="20"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="64r-aU-sqc"/>
+                            <constraint firstAttribute="width" constant="40" id="yk5-sz-Xss"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g89-1R-HIM">
+                        <rect key="frame" x="8" y="32" width="379" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="75" id="ZQr-XM-o8x"/>
+                        </constraints>
+                        <string key="text">Knowing that Mrs. Mallard was afflicted with a heart trouble, great care was taken to break to her as gently as possible the news of her husband's death. It was her sister Josephine who told her, in broken sentences; veiled hints that revealed in half concealing. Her husband's friend Richards</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pk5-qs-hHs">
+                        <rect key="frame" x="16" y="156" width="363" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="vSj-RJ-mSy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="pk5-qs-hHs" secondAttribute="bottom" id="46f-n3-o00"/>
+                    <constraint firstItem="iW7-ad-Au8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Afa-Tt-jRR"/>
+                    <constraint firstItem="iW7-ad-Au8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="EEn-Cn-hed"/>
+                    <constraint firstItem="g89-1R-HIM" firstAttribute="top" secondItem="iW7-ad-Au8" secondAttribute="bottom" constant="4" id="HGl-WK-bhH"/>
+                    <constraint firstAttribute="trailing" secondItem="g89-1R-HIM" secondAttribute="trailing" constant="8" id="ibp-yf-8FQ"/>
+                    <constraint firstItem="pk5-qs-hHs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="jtK-1z-JIR"/>
+                    <constraint firstItem="g89-1R-HIM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="qdg-WW-Wyp"/>
+                    <constraint firstAttribute="trailing" secondItem="pk5-qs-hHs" secondAttribute="trailing" constant="16" id="xkr-LN-B4h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bioLabel" destination="g89-1R-HIM" id="6nE-Ll-vvF"/>
+            </connections>
+            <point key="canvasLocation" x="-152.5" y="65"/>
+        </tableViewCell>
+    </objects>
+</document>
